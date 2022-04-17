@@ -59,6 +59,7 @@
         $row_count = $statement->rowCount();
 
         if ($row_count > 0) {
+          header('Location: ../dashboard/index.html')
       ?>
           <div class="alert alert-success" role="alert">
             Login Berhasil
