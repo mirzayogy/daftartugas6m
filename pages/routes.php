@@ -3,6 +3,7 @@ if (isset($_GET['page'])) {
     $page = $_GET['page'];
     switch($page){
         case '':
+        case 'dashboard':
             file_exists("dashboard.php") ? include "dashboard.php" : include "404.php";
             break;
         case 'dosen':
