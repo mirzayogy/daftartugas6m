@@ -8,19 +8,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="dosen.php">
+                <a class="nav-link" href="?page=dosen">
                     <span data-feather="file"></span>
                     Dosen
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="matakuliah.php">
+                <a class="nav-link" href="?page=matakuliah">
                     <span data-feather="shopping-cart"></span>
                     Mata Kuliah
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="?page=tugas">
                     <span data-feather="users"></span>
                     Tugas
                 </a>
