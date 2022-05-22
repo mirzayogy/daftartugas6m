@@ -40,7 +40,7 @@ $_SESSION['pesan'] = "kosong";
                     <td><?php echo $data['handphone'] ?></td>
                     <td><?php echo $data['email'] ?></td>
                     <td>
-                        <a href="#" class="badge bg-warning">
+                        <a href="?page=dosenupdate&id=<?php echo $data['id'] ?>" class="badge bg-warning">
                             <span data-feather="edit"></span>
                         </a>
                         <a href="#" class="badge bg-danger">
