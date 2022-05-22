@@ -1,13 +1,24 @@
 <h2>Tambah Data Dosen</h2>
-<?php 
-if(isset($_POST['button_simpan'])){
+<?php
+if (isset($_POST['button_simpan'])) {
     $nama_dosen = $_POST['nama_dosen'];
     $handphone = $_POST['handphone'];
     $email = $_POST['email'];
 
     $createSQL = "INSERT INTO `dosen` (`id`, `nama_dosen`, `handphone`, `email`) VALUES (NULL, '$nama_dosen', '$handphone', '$email')";
 
-    echo $createSQL;
+    include_once("../database/database.php");
+    $database = new Database;
+    $connection = $database->getConnection();
+    $statement = $connection->prepare($createSQL);
+    $statement->execute();
+?>
+    <div class="alert alert-success" role="alert">
+        Berhasil simpan data
+    </div>
+<?php
+
+    header('Location: main.php?page=dosen');
 }
 ?>
 <div class="row">
