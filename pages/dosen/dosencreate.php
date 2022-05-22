@@ -21,7 +21,7 @@ if (isset($_POST['button_simpan'])) {
         Berhasil simpan data
     </div>
 <?php
-
+    $_SESSION['pesan'] = "Berhasil simpan data";
     header('Location: main.php?page=dosen');
 }
 ?>
